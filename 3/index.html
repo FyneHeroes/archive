@@ -1,0 +1,528 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml"><head><title>Fyne v2.4.0 release and lots of activity</title><!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]--><!--[if !mso]><!--><link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i|Open+sans:400,400i,700,700i|Roboto:400,400i,700,700i|Montserrat:400,400i,700,700i" rel="stylesheet"><!--<![endif]-->
+	<meta content="width=device-width" name="viewport">
+	<style>
+	/* #### Mobile Phones Portrait #### */
+	/* #### iPhone 4+ Portrait or Landscape #### */
+	@media only screen and (max-width: 480px){
+		table[class=contentInner] {width:100% !important;padding:0px;margin:0px;}
+		img[class=zpImage]{width:260px !important;max-width: 360px !important;text-align:center;margin:0px;padding:0px} 
+		body, table, td, p, li,div,span, blockquote{-webkit-text-size-adjust:none !important;margin:0px auto;line-height:1.7}
+		table[class=zpImageCaption]{text-align:left;}
+		table[class=cols]{width:100% !important;max-width:100% !important;text-align:left;}
+		table[class=zpcolumns] {text-align:left;margin:0px;} 
+		table[class=zpcolumn] {text-align:left;margin:0px;} 
+		table[class=zpAlignPos]{width:100%;text-align:left;margin:0px;} 
+		td[class=txtsize]{font-size:18px !important;}
+		td[class=paddingcomp]{ padding-left: 15px !important; padding-right: 15px !important }
+		td[class=bannerimgpad]{padding:0px !important;}
+		span[class=txtsize]{font-size:18px !important;}
+		img[size = "B"]{width: 100% !important;max-width:100% !important;margin: 0px !important;padding:0px !important;}
+		img[size = "F"]{width: 100% !important;max-width:100% !important;margin: 0px !important;padding:0px !important;}
+		img[size = "S"]{width:105px !important; height:auto; margin:0px auto !important;padding:0px !important;}
+		img[size = "M"]{width:277.869px !important;height:auto;margin:0px auto !important;padding:0px !important;}
+		h1{
+			font-size:28px !important;
+			line-height:100% !important;
+		}
+		h2{
+			font-size:24px !important;
+			line-height:100% !important;
+		}
+		h3{
+			font-size:20px !important;
+			line-height:100% !important;
+		}
+		h4{
+			font-size:18px !important;
+			line-height:100% !important;
+		}
+		}		
+		@media only screen and (max-width: 480px){
+		.zpImage{
+			height:auto !important;
+			width:100% !important;
+		}}
+		@media only screen and (max-width: 480px){
+		.contentInner,.cols,.zpAlignPos{
+			width:100% !important;
+			max-width:100% !important;
+		}}
+		@media only screen and (max-width: 480px){
+		.paddingcomp{
+			padding-left: 15px !important;
+			padding-right: 15px !important; 
+		}
+		.bannerimgpad{
+			padding:0px !important;
+		}
+		.buttonElem a
+		{
+			max-width: 320px !important;
+		}
+	}
+		@media screen and (max-width: 480px)
+        {
+                .tmplheader,.tmplfooter{width:100% !important;max-width:400px !important;margin:0px auto;text-align:center;}
+        }
+		a[x-apple-data-detectors] {
+		    color: inherit !important;
+		    text-decoration: none !important;
+		    font-size: inherit !important;
+		    font-family: inherit !important;
+		    font-weight: inherit !important;
+		    line-height: inherit !important;
+		}
+		
+		</style>
+<meta content="text/html;charset=UTF-8" http-equiv="Content-Type"></head><body bgcolor="#f0f0f0" style="margin:0; padding:0;font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000000;"><center> 
+<div class="zppage-container">                                                          
+		<table bgcolor="#f0f0f0" border="0" cellpadding="0" cellspacing="0" class="contentOuter" id="contentOuter" style="background-color:#ffffff;background-color:#f0f0f0;text-align:center;border:0px;padding:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" width="100%"> 
+			<tbody><tr> 
+				<td style="border:0px;padding:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">&nbsp;</td>
+				<td align="center" style="border:0px;padding:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+					<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="contentInner" id="contentInner" style="background-color:#f7f8fc;background-color:#ffffff;width:680px;margin:0px auto;border:0px;" width="680"> 
+					<tbody><tr> 
+					<td height="570" style="border:0px;padding:0px;" valign="top">
+					 	<a name="Top" style="text-decoration:underline;"></a>
+    <div baseposition="pos_YFkUyjFlRUSG17KTGU8Ffg" class="zpcontent-wrapper" id="page-container">
+    <table border="0" cellpadding="0" cellspacing="0" id="page-container" style="border:0px;padding:0px;border-collapse:collapse; mso-table-lspace:0pt;mso-table-rspace:0pt;text-decoration:none !important;" width="100%">
+<tbody><tr><td class="txtsize" id="elm_1593176472760" style="border:0px;padding:0px 0px;border-collapse:collapse;" valign="top">
+
+	    	<table bgcolor="transparent" border="0" cellpadding="0" cellspacing="0" style="border:0px;padding:0px;width:100%;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;background-color:transparent;">
+	    <tbody><tr>
+		<td class="txtsize" style="border:0px;padding:0px 0px;border-top:none none none ;border-bottom:none none none">
+            	<div class="zpelement-wrapper image" coupcmp id="elm_1593176472760" prodcmp style=";word-wrap:break-word;overflow:hidden;padding:0px;background-color:transparent;">
+			<div>
+		        <table align="left" border="0" cellpadding="0" cellspacing="0" class="zpAlignPos" style="text-align:left;padding:0px;border:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;width:100%;text-align:left;">
+            		<tbody><tr><td class="paddingcomp" style="border:0px;padding:7px 15px;text-align:center;padding-top:20px;padding-bottom:7px;padding-right:15px;padding-left:15px">
+			<a href="https://github.com/FyneHeroes" style="text-decoration:underline;border:0px;" target="_blank" zcurl_name="l_1">
+			<img align="left" alt="https://campaign-image.com/zohocampaigns/133052000002479030_zc_v12_last.png" class="zpImage" height="auto" hspace="0" size="S" src="https://stratus.campaign-image.eu/images/133569000001290004_zc_v28_1679313987937_123510392.png" style="width:150px;height:autopx;max-width:150px !important;border:0px;text-align:left;" vspace="0" width="150">
+			</a>
+			</td></tr>
+			</tbody></table>
+		</div>
+            </div>
+            </td></tr></tbody></table>
+</td></tr>
+<tr><td class="txtsize" id="elm_PNsPADYZQ_m-XN5Qbzjs8g" style="border:0px;padding:0px 0px;border-collapse:collapse;" valign="top">
+
+          <div class="zpelement-wrapper" id="elm_PNsPADYZQ_m-XN5Qbzjs8g" style=";word-wrap:break-word;overflow:hidden;padding-right:0px;background-color:;">
+	    	<table border="0" cellpadding="0" cellspacing="0" class="zpAlignPos" style="padding:0px;border:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+	  	
+            <tbody><tr><td class="paddingcomp" style="border:0px;padding:7px 15px;font-size:12pt;font-family:Arial,Helvetica;line-height:19pt;border-top:0px none ;   border-bottom:0px none ;padding-top:7px;padding-bottom:7px;padding-right:15px;padding-left:15px">
+             	    		<div componentpaddingbottom="7px" componentpaddingleft="15px" componentpaddingright="15px" componentpaddingtop="7px" style><h1 align="center" style="font-family:Arial,verdana,Helvetica, sans-serif;font-size: 28px;color:#000000; font-weight:normal; color:#000000;padding: 0px;margin: 0;text-align: left;"><b><font color="#040404" face="Arial, Helvetica" style="font-size: 22pt;"><span>A busy summer and bumper release for Fyne</span></font></b><br></h1></div>
+			</td></tr>
+		</tbody></table>
+       	  </div>
+</td></tr>
+<tr><td class="txtsize" id="elm_1679310981059" style="border:0px;padding:0px 0px;border-collapse:collapse;" valign="top">
+
+          <div class="zpelement-wrapper" id="elm_1679310981059" style=";word-wrap:break-word;overflow:hidden;padding-right:0px;background-color:;">
+	    	<table border="0" cellpadding="0" cellspacing="0" class="zpAlignPos" style="padding:0px;border:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+	  	
+            <tbody><tr><td class="paddingcomp" style="border:0px;padding:7px 15px;font-size:12pt;font-family:Arial,Helvetica;line-height:19pt;border-top:0px none ;   border-bottom:0px none ;padding-top:7px;padding-bottom:7px;padding-right:15px;padding-left:15px">
+             	    		<div style><p style="font-family:Arial,verdana;font-size:12px; color:#000000;padding:0px;margin: 0;line-height: 19pt; text-align: left;"><font face="Arial, Helvetica"><font size="3"><font color="#333333">Welcome back to the Fyne Heroes newsletter - we are excited to highlight a great new project that has been constructed with the toolkit. It's been a very busy summer with releases and new features being explored. If you would like to feature your app in this newsletter just drop a note to someone in the community.</font></font></font></p></div>
+			</td></tr>
+		</tbody></table>
+       	  </div>
+</td></tr>
+<tr><td class="txtsize" id="elm_1514437851919" style="border:0px;padding:0px 0px;border-collapse:collapse;" valign="top">
+
+	<div class="zpelement-wrapper zpcol-layout" id="elm_1514437851919" style="word-wrap:break-word;padding-bottom:0 !important;overflow:hidden;padding:0px;margin:0px;">
+	<div class="zpcolumns" elm_wid_start="680" style="padding:0px;margin:0px;">
+	    	 <table bgcolor="transparent" cellpadding="0" cellspacing="0" style="border:0px;padding:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;width:100%;background-color:transparent" width="100%">
+	    <tbody><tr>
+		<td class="txtsize" style="border:0px;padding:0px 0px;border-top:none none none;border-bottom:none none none" valign="top">
+            	<!--[if (gte mso 9)|(IE)]>
+	                <table cellpadding="0" cellspacing="0" style=" mso-table-lspace:0pt; mso-table-rspace:0pt;font-size:12px;border:0px;padding:0px;border-collapse:collapse; mso-table-lspace:0pt;width:100%; mso-table-rspace:0pt;" width="100%">
+				    <tbody><tr>
+	            <![endif]-->
+			
+		        <!--[if (gte mso 9)|(IE)]>
+					<td style="font-size:12px;font-family:Arial, Helvetica, sans-serif;border:0px;padding:0px 0px;" align="left" width=" 55.0%" valign="top">
+	            <![endif]-->         
+				  <table align="left" cellpadding="0" cellspacing="0" class="cols" style="max-width:374.00000000000006px;width:100%;border:0px;padding:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;float:left;" width="100%">
+				<tbody><tr>
+		                <td class="txtsize" style="border:0px;padding:0px;" valign="top">
+                                    <div class="zpwrapper col-space" id="pos_1514437851914" style="padding:0px;">
+
+          <div class="zpelement-wrapper" id="elm_1514437851918" style=";word-wrap:break-word;overflow:hidden;padding-right:0px;background-color:;">
+	    	<table border="0" cellpadding="0" cellspacing="0" class="zpAlignPos" style="padding:0px;border:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+	  	
+            <tbody><tr><td class="paddingcomp" style="border:0px;padding:7px 15px;font-size:12pt;font-family:Arial,Helvetica;line-height:19pt;border-top:0px none ;   border-bottom:0px none ;padding-top:7px;padding-bottom:7px;padding-right:15px;padding-left:15px">
+             	    		<div style><p align="left" style="font-family:Arial,verdana;font-size:12px; color:#000000;padding:0px;margin: 0;line-height: 19pt; text-align: left; word-break: normal; word-wrap: normal;"><font color="#1c1c1c" face="Arial, Helvetica" style="line-height: 19pt;"><span style="line-height: 19pt;"><font color="#1c1c1c" style="color: rgb(28, 28, 28); font-size: 12pt;"><b><font color="#1c1c1c" style="color:#1c1c1c;"><a alt="Remote access with Shells.com" href="https://www.shells.com/" rel="noopener noreferrer" style="text-decoration:underline;color: rgb(28, 28, 28);" target="_blank" title="Remote access with Shells.com" zcurl_name="l_2"><font color="#1c1c1c" style="color:#1c1c1c;">Remote access with Shells.com</font></a></font></b></font></span></font></p><p align="left" style="font-family:Arial,verdana;font-size:12px; color:#000000;padding:0px;margin: 0;line-height: 19pt; text-align: left; word-break: normal; word-wrap: normal;"><font color="#1c1c1c" face="Arial, Helvetica" size="3">A long-time sponsor of the Fyne project, Shells.com offers secure and easy to use remote access for your computers. Their <a alt="Go based client" href="https://github.com/Shells-com/shells-go" rel="noopener noreferrer" style="text-decoration:underline;color: rgb(28, 28, 28);" target="_blank" title="Go based client" zcurl_name="l_3"><font color="#1c1c1c" style="color:#1c1c1c;">Go based client</font></a> uses Fyne for the graphics for full-screen 30FPS&nbsp;<span style="caret-color: rgb(28, 28, 28);">Remote Desktop viewing and control!</span></font></p></div>
+			</td></tr>
+		</tbody></table>
+       	  </div>
+		                    </div> 
+		    </td></tr></tbody></table>
+		    <!--[if (gte mso 9)|(IE)]>
+                      </td>
+            <![endif]-->
+			
+		        <!--[if (gte mso 9)|(IE)]>
+					<td style="font-size:12px;font-family:Arial, Helvetica, sans-serif;border:0px;padding:0px 0px;" align="left" width=" 45.0%" valign="top">
+	            <![endif]-->         
+				  <table align="left" cellpadding="0" cellspacing="0" class="cols" style="max-width:306.0px;width:100%;border:0px;padding:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;float:left;" width="100%">
+				<tbody><tr>
+		                <td class="txtsize" style="border:0px;padding:0px;" valign="top">
+                                    <div class="zpwrapper col-space" id="pos_1514437851917" style="padding:0px;">
+
+	    	<table bgcolor="transparent" border="0" cellpadding="0" cellspacing="0" style="border:0px;padding:0px;width:100%;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;background-color:transparent;">
+	    <tbody><tr>
+		<td class="txtsize" style="border:0px;padding:0px 0px;border-top:none none none ;border-bottom:none none none">
+            	<div class="zpelement-wrapper image" coupcmp id="elm_1514438040209" prodcmp style=";word-wrap:break-word;overflow:hidden;padding:0px;background-color:transparent;">
+			<div>
+		        <table align="left" border="0" cellpadding="0" cellspacing="0" class="zpAlignPos" style="text-align:left;width:100%;padding:0px;border:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;width:100%;text-align:left;">
+            		<tbody><tr><td class="paddingcomp" style="border:0px;padding:7px 15px;text-align:center;padding-top:7px;padding-bottom:7px;padding-right:15px;padding-left:15px">
+			<a href="https://shells.com" style="text-decoration:underline;border:0px;" target="_blank" zcurl_name="l_4">
+			<img align="left" alt="Shells.com preview" class="zpImage" height="auto" hspace="0" size="F" src="https://stratus.campaign-image.eu/images/133569000001290004_zc_v1_1695030731215_devices3.21065f8d.png" style="width:276px;height:autopx;max-width:360px !important;border:0px;text-align:left;" vspace="0" width="276">
+			</a>
+			</td></tr>
+			</tbody></table>
+		</div>
+            </div>
+            </td></tr></tbody></table>
+		                    </div> 
+		    </td></tr></tbody></table>
+		    <!--[if (gte mso 9)|(IE)]>
+                      </td>
+            <![endif]-->
+		 <!--[if (gte mso 9)|(IE)]>
+                      </tr></tbody></table>
+            <![endif]-->
+		</td>
+	    </tr>
+	    </tbody></table>
+            </div></div>
+</td></tr>
+<tr><td class="txtsize" id="elm_1514438255535" style="border:0px;padding:0px 0px;border-collapse:collapse;" valign="top">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+	          <div class="zpelement-wrapper spacebar" id="elm_1514438255535" style=";word-wrap:break-word;overflow:hidden;background-color:transparent;">
+					
+					 <table bgcolor="transparent" border="0" cellpadding="0" cellspacing="0" class="zpAlignPos" style="padding:0px;border:0px;border-collapse:collapse; mso-table-lspace:0pt;font-size:5px; mso-table-rspace:0pt;word-break:break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;height:20px" width="100%">
+
+	                        <tbody><tr><td style="padding:0px;border:0px;font-size:5px;height:20px;border-top:none none none;border-bottom:none none none;">
+
+	                        &nbsp;&nbsp;&nbsp;
+
+	                        </td></tr>
+
+	                </tbody></table>
+
+	          </div>
+
+</td></tr>
+<tr><td class="txtsize" id="elm_1514437716505" style="border:0px;padding:0px 0px;border-collapse:collapse;" valign="top">
+
+	<div class="zpelement-wrapper zpcol-layout" id="elm_1514437716505" style="word-wrap:break-word;padding-bottom:0 !important;overflow:hidden;padding:0px;margin:0px;">
+	<div class="zpcolumns" elm_wid_start="680" style="padding:0px;margin:0px;">
+	    	 <table bgcolor="transparent" cellpadding="0" cellspacing="0" style="border:0px;padding:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;width:100%;background-color:transparent" width="100%">
+	    <tbody><tr>
+		<td class="txtsize" style="border:0px;padding:0px 0px;border-top:none none none;border-bottom:none none none" valign="top">
+            	<!--[if (gte mso 9)|(IE)]>
+	                <table cellpadding="0" cellspacing="0" style=" mso-table-lspace:0pt; mso-table-rspace:0pt;font-size:12px;border:0px;padding:0px;border-collapse:collapse; mso-table-lspace:0pt;width:100%; mso-table-rspace:0pt;" width="100%">
+				    <tbody><tr>
+	            <![endif]-->
+			
+		        <!--[if (gte mso 9)|(IE)]>
+					<td style="font-size:12px;font-family:Arial, Helvetica, sans-serif;border:0px;padding:0px 0px;" align="left" width=" 47.0%" valign="top">
+	            <![endif]-->         
+				  <table align="left" cellpadding="0" cellspacing="0" class="cols" style="max-width:319.59999999999997px;width:100%;border:0px;padding:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;float:left;" width="100%">
+				<tbody><tr>
+		                <td class="txtsize" style="border:0px;padding:0px;" valign="top">
+                                    <div class="zpwrapper col-space" id="pos_1514437716498" style="padding:0px;">
+
+	    	<table bgcolor="transparent" border="0" cellpadding="0" cellspacing="0" style="border:0px;padding:0px;width:100%;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;background-color:transparent;">
+	    <tbody><tr>
+		<td class="txtsize" style="border:0px;padding:0px 0px;border-top:none none none ;border-bottom:none none none">
+            	<div class="zpelement-wrapper image" coupcmp id="elm_1514437716503" prodcmp style=";word-wrap:break-word;overflow:hidden;padding:0px;background-color:transparent;">
+			<div>
+		        <table align="left" border="0" cellpadding="0" cellspacing="0" class="zpAlignPos" style="text-align:left;width:100%;padding:0px;border:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;width:100%;text-align:left;">
+            		<tbody><tr><td class="paddingcomp" style="border:0px;padding:7px 15px;text-align:center;padding-top:7px;padding-bottom:7px;padding-right:15px;padding-left:15px">
+			<a href="https://fyne.io/blog/2023/09/18/v2.4.html#about" style="text-decoration:underline;border:0px;" target="_blank" zcurl_name="l_5">
+			<img align="left" alt="screenshot of various rounded rectangles" class="zpImage" height="auto" hspace="0" size="F" src="https://stratus.campaign-image.eu/images/20069050707/inkcanva_133569000001302005.png" style="width:289.6px;height:autopx;max-width:360px !important;border:0px;text-align:left;" title="Rounded Rectangle" vspace="0" width="289.6">
+			</a>
+			</td></tr>
+			</tbody></table>
+		</div>
+            </div>
+            </td></tr></tbody></table>
+		                    </div> 
+		    </td></tr></tbody></table>
+		    <!--[if (gte mso 9)|(IE)]>
+                      </td>
+            <![endif]-->
+			
+		        <!--[if (gte mso 9)|(IE)]>
+					<td style="font-size:12px;font-family:Arial, Helvetica, sans-serif;border:0px;padding:0px 0px;" align="left" width=" 53.0%" valign="top">
+	            <![endif]-->         
+				  <table align="left" cellpadding="0" cellspacing="0" class="cols" style="max-width:360.40000000000003px;width:100%;border:0px;padding:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;float:left;" width="100%">
+				<tbody><tr>
+		                <td class="txtsize" style="border:0px;padding:0px;" valign="top">
+                                    <div class="zpwrapper col-space" id="pos_1514437716500" style="padding:0px;">
+
+          <div class="zpelement-wrapper" id="elm_1514438063986" style=";word-wrap:break-word;overflow:hidden;padding-right:0px;background-color:;">
+	    	<table border="0" cellpadding="0" cellspacing="0" class="zpAlignPos" style="padding:0px;border:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+	  	
+            <tbody><tr><td class="paddingcomp" style="border:0px;padding:7px 15px;font-size:12pt;font-family:Arial,Helvetica;line-height:19pt;border-top:0px none ;   border-bottom:0px none ;padding-top:7px;padding-bottom:7px;padding-right:15px;padding-left:15px">
+             	    		<div style><p align="left" style="font-family:Arial,verdana;font-size:12px; color:#000000;padding:0px;margin: 0;line-height: 19pt; text-align: left; word-break: normal; word-wrap: normal;"><font style="font-size: 12pt;"><b><font color="#000000" style="color: rgb(0, 0, 0);"><font color="#000000" style="color: rgb(0, 0, 0);"><a alt="Fyne 2.4: A super sized release!" href="https://fyne.io/blog/2023/09/18/v2.4.html#about" rel="noopener noreferrer" style="text-decoration:underline;color: rgb(0, 0, 0);" target="_blank" title="Fyne 2.4: A super sized release!" zcurl_name="l_6"><font color="#000000" style="color:#000000;">Fyne 2.4: A super sized release!</font></a></font></font></b></font></p><p align="left" style="font-family:Arial,verdana;font-size:12px; color:#000000;padding:0px;margin: 0;line-height: 19pt; text-align: left; word-break: normal; word-wrap: normal;"><font color="#1c1c1c" face="Arial, Helvetica" size="3"><span style="caret-color: rgb(28, 28, 28);">Rounded rectangles, emoji support, layout debugging and table headers lead the list of features for v2.4.0 release - our largest release since v2.0.0!</span></font></p><p align="left" style="font-family:Arial,verdana;font-size:12px; color:#000000;padding:0px;margin: 0;line-height: 19pt; text-align: left; word-break: normal; word-wrap: normal;"><font color="#1c1c1c" face="Arial, Helvetica" size="3">Check out also the new text truncation, list types in Preferences, improved keyboard handling in collections and many improvements to data binding as well!</font></p></div>
+			</td></tr>
+		</tbody></table>
+       	  </div>
+		                    </div> 
+		    </td></tr></tbody></table>
+		    <!--[if (gte mso 9)|(IE)]>
+                      </td>
+            <![endif]-->
+		 <!--[if (gte mso 9)|(IE)]>
+                      </tr></tbody></table>
+            <![endif]-->
+		</td>
+	    </tr>
+	    </tbody></table>
+            </div></div>
+</td></tr>
+<tr><td class="txtsize" id="elm_1679310001042" style="border:0px;padding:0px 0px;border-collapse:collapse;" valign="top">
+
+	<div class="zpelement-wrapper zpcol-layout" id="elm_1679310001042" style="word-wrap:break-word;padding-bottom:0 !important;overflow:hidden;padding:0px;margin:0px;">
+	<div class="zpcolumns" elm_wid_start="680" style="padding:0px;margin:0px;">
+	    	 <table bgcolor="transparent" cellpadding="0" cellspacing="0" style="border:0px;padding:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;width:100%;background-color:transparent" width="100%">
+	    <tbody><tr>
+		<td class="txtsize" style="border:0px;padding:0px 0px;border-top:none none none;border-bottom:none none none" valign="top">
+            	<!--[if (gte mso 9)|(IE)]>
+	                <table cellpadding="0" cellspacing="0" style=" mso-table-lspace:0pt; mso-table-rspace:0pt;font-size:12px;border:0px;padding:0px;border-collapse:collapse; mso-table-lspace:0pt;width:100%; mso-table-rspace:0pt;" width="100%">
+				    <tbody><tr>
+	            <![endif]-->
+			
+		        <!--[if (gte mso 9)|(IE)]>
+					<td style="font-size:12px;font-family:Arial, Helvetica, sans-serif;border:0px;padding:0px 0px;" align="left" width=" 58.0%" valign="top">
+	            <![endif]-->         
+				  <table align="left" cellpadding="0" cellspacing="0" class="cols" style="max-width:394.4px;width:100%;border:0px;padding:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;float:left;" width="100%">
+				<tbody><tr>
+		                <td class="txtsize" style="border:0px;padding:0px;" valign="top">
+                                    <div class="zpwrapper col-space" id="pos_1679310001043" style="padding:0px;">
+
+          <div class="zpelement-wrapper" id="elm_1679310001045" style=";word-wrap:break-word;overflow:hidden;padding-right:0px;background-color:;">
+	    	<table border="0" cellpadding="0" cellspacing="0" class="zpAlignPos" style="padding:0px;border:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+	  	
+            <tbody><tr><td class="paddingcomp" style="border:0px;padding:7px 15px;font-size:12pt;font-family:Arial,Helvetica;line-height:19pt;border-top:0px none ;   border-bottom:0px none ;padding-top:7px;padding-bottom:7px;padding-right:15px;padding-left:15px">
+             	    		<div style><p align="left" style="font-family:Arial,verdana;font-size:12px; color:#000000;padding:0px;margin: 0;line-height: 19pt; text-align: left; word-break: normal; overflow-wrap: normal;"><font color="#1c1c1c" face="Arial, Helvetica" style="line-height: 19pt; font-size: 12pt;"><span style="line-height: 19pt;"><b><font color="#1c1c1c" style="color:#1c1c1c;"><a alt="Future feature" href="https://fynelabs.com/2023/09/13/replicating-the-classic-mdi/" rel="noopener noreferrer" style="text-decoration:underline;color: rgb(28, 28, 28);" target="_blank" title="Future feature" zcurl_name="l_7"><font color="#1c1c1c" style="color:#1c1c1c;">Future feature</font></a></font></b></span></font></p><p align="left" style="font-family:Arial,verdana;font-size:12px; color:#000000;padding:0px;margin: 0;line-height: 19pt; text-align: left; word-break: normal; overflow-wrap: normal;"><font color="#1c1c1c" face="Arial, Helvetica" size="3">A little peak at what is coming round the corner, there is a pull request open for adding internal window borders. Combine this with the proposed </font><font color="#1c1c1c" face="Montserrat, helvetica, arial, sans-serif" size="3">MultipleWindows</font><font color="#1c1c1c" face="Arial, Helvetica" size="3"> container you can now get many different windows with their own content inside a portion of your application - on any platform!</font></p></div>
+			</td></tr>
+		</tbody></table>
+       	  </div>
+		                    </div> 
+		    </td></tr></tbody></table>
+		    <!--[if (gte mso 9)|(IE)]>
+                      </td>
+            <![endif]-->
+			
+		        <!--[if (gte mso 9)|(IE)]>
+					<td style="font-size:12px;font-family:Arial, Helvetica, sans-serif;border:0px;padding:0px 0px;" align="left" width=" 42.0%" valign="top">
+	            <![endif]-->         
+				  <table align="left" cellpadding="0" cellspacing="0" class="cols" style="max-width:285.59999999999997px;width:100%;border:0px;padding:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;float:left;" width="100%">
+				<tbody><tr>
+		                <td class="txtsize" style="border:0px;padding:0px;" valign="top">
+                                    <div class="zpwrapper col-space" id="pos_1679310001044" style="padding:0px;">
+
+	    	<table bgcolor="transparent" border="0" cellpadding="0" cellspacing="0" style="border:0px;padding:0px;width:100%;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;background-color:transparent;">
+	    <tbody><tr>
+		<td class="txtsize" style="border:0px;padding:0px 0px;border-top:none none none ;border-bottom:none none none">
+            	<div class="zpelement-wrapper image" coupcmp id="elm_1679310001046" prodcmp style=";word-wrap:break-word;overflow:hidden;padding:0px;background-color:transparent;">
+			<div>
+		        <table align="left" border="0" cellpadding="0" cellspacing="0" class="zpAlignPos" style="text-align:left;width:100%;padding:0px;border:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;width:100%;text-align:left;">
+            		<tbody><tr><td class="paddingcomp" style="border:0px;padding:7px 15px;text-align:center;padding-top:7px;padding-bottom:7px;padding-right:15px;padding-left:15px">
+			<a href="https://fynelabs.com/2023/09/13/replicating-the-classic-mdi/" style="text-decoration:underline;border:0px;" target="_blank" zcurl_name="l_8">
+			<img align="left" alt="screenshot of upcoming multiple windows" class="zpImage" height="auto" hspace="0" size="F" src="https://stratus.campaign-image.eu/images/133569000001290004_zc_v1_1695030125982_innerwin.png" style="width:255.6px;height:autopx;max-width:360px !important;border:0px;text-align:left;" title="Inner window border" vspace="0" width="255.6">
+			</a>
+			</td></tr>
+			</tbody></table>
+		</div>
+            </div>
+            </td></tr></tbody></table>
+		                    </div> 
+		    </td></tr></tbody></table>
+		    <!--[if (gte mso 9)|(IE)]>
+                      </td>
+            <![endif]-->
+		 <!--[if (gte mso 9)|(IE)]>
+                      </tr></tbody></table>
+            <![endif]-->
+		</td>
+	    </tr>
+	    </tbody></table>
+            </div></div>
+</td></tr>
+<tr><td class="txtsize" id="elm_1679310011909" style="border:0px;padding:0px 0px;border-collapse:collapse;" valign="top">
+
+	<div class="zpelement-wrapper zpcol-layout" id="elm_1679310011909" style="word-wrap:break-word;padding-bottom:0 !important;overflow:hidden;padding:0px;margin:0px;">
+	<div class="zpcolumns" elm_wid_start="680" style="padding:0px;margin:0px;">
+	    	 <table bgcolor="transparent" cellpadding="0" cellspacing="0" style="border:0px;padding:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;width:100%;background-color:transparent" width="100%">
+	    <tbody><tr>
+		<td class="txtsize" style="border:0px;padding:0px 0px;border-top:none none none;border-bottom:none none none" valign="top">
+            	<!--[if (gte mso 9)|(IE)]>
+	                <table cellpadding="0" cellspacing="0" style=" mso-table-lspace:0pt; mso-table-rspace:0pt;font-size:12px;border:0px;padding:0px;border-collapse:collapse; mso-table-lspace:0pt;width:100%; mso-table-rspace:0pt;" width="100%">
+				    <tbody><tr>
+	            <![endif]-->
+			
+		        <!--[if (gte mso 9)|(IE)]>
+					<td style="font-size:12px;font-family:Arial, Helvetica, sans-serif;border:0px;padding:0px 0px;" align="left" width=" 50.0%" valign="top">
+	            <![endif]-->         
+				  <table align="left" cellpadding="0" cellspacing="0" class="cols" style="max-width:340.0px;width:100%;border:0px;padding:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;float:left;" width="100%">
+				<tbody><tr>
+		                <td class="txtsize" style="border:0px;padding:0px;" valign="top">
+                                    <div class="zpwrapper col-space" id="pos_1679310011910" style="padding:0px;">
+
+	    	<table bgcolor="transparent" border="0" cellpadding="0" cellspacing="0" style="border:0px;padding:0px;width:100%;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;background-color:transparent;">
+	    <tbody><tr>
+		<td class="txtsize" style="border:0px;padding:0px 0px;border-top:none none none ;border-bottom:none none none">
+            	<div class="zpelement-wrapper image" coupcmp id="elm_1679310011912" prodcmp style=";word-wrap:break-word;overflow:hidden;padding:0px;background-color:transparent;">
+			<div>
+		        <table align="left" border="0" cellpadding="0" cellspacing="0" class="zpAlignPos" style="text-align:left;width:100%;padding:0px;border:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;width:100%;text-align:left;">
+            		<tbody><tr><td class="paddingcomp" style="border:0px;padding:7px 15px;text-align:center;padding-top:7px;padding-bottom:7px;padding-right:15px;padding-left:30px">
+			<a href="http://fynelabs.com/creating-an-app-builder/" style="text-decoration:underline;border:0px;" target="_blank" zcurl_name="l_9">
+			<img align="left" alt="App builder on iPad" class="zpImage" height="auto" hspace="0" size="F" src="https://stratus.campaign-image.eu/images/133569000001290004_zc_v1_1695030177741_screenshot_ep2.png" style="width:295px;height:autopx;max-width:360px !important;border:0px;text-align:left;" title="A partially created app builder on iPad" vspace="0" width="295">
+			</a>
+			</td></tr>
+			</tbody></table>
+		</div>
+            </div>
+            </td></tr></tbody></table>
+		                    </div> 
+		    </td></tr></tbody></table>
+		    <!--[if (gte mso 9)|(IE)]>
+                      </td>
+            <![endif]-->
+			
+		        <!--[if (gte mso 9)|(IE)]>
+					<td style="font-size:12px;font-family:Arial, Helvetica, sans-serif;border:0px;padding:0px 0px;" align="left" width=" 50.0%" valign="top">
+	            <![endif]-->         
+				  <table align="left" cellpadding="0" cellspacing="0" class="cols" style="max-width:340.0px;width:100%;border:0px;padding:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;float:left;" width="100%">
+				<tbody><tr>
+		                <td class="txtsize" style="border:0px;padding:0px;" valign="top">
+                                    <div class="zpwrapper col-space" id="pos_1679310011911" style="padding:0px;">
+
+          <div class="zpelement-wrapper" id="elm_1679310011913" style=";word-wrap:break-word;overflow:hidden;padding-right:0px;background-color:;">
+	    	<table border="0" cellpadding="0" cellspacing="0" class="zpAlignPos" style="padding:0px;border:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+	  	
+            <tbody><tr><td class="paddingcomp" style="border:0px;padding:7px 15px;font-size:12pt;font-family:Arial,Helvetica;line-height:19pt;border-top:0px none ;   border-bottom:0px none ;padding-top:7px;padding-bottom:7px;padding-right:30px;padding-left:15px">
+             	    		<div componentpaddingbottom="7px" componentpaddingleft="15px" componentpaddingright="30px" componentpaddingtop="7px" style><p align="left" style="font-family:Arial,verdana;font-size:12px; color:#000000;padding:0px;margin: 0;line-height: 19pt; text-align: left;"><b><span style="font-size: 12pt; font-family: Arial, Helvetica;"><font color="#000000" style="color: rgb(0, 0, 0);"><a alt="Creating an App Builder" href="http://fynelabs.com/creating-an-app-builder/" rel="noopener noreferrer" style="text-decoration:underline;color: rgb(0, 0, 0);" target="_blank" title="Creating an App Builder" zcurl_name="l_10"><font color="#000000" style="color:#000000;">Creating an App Builder</font></a></font></span><br></b></p><p align="left" style="font-family:Arial,verdana;font-size:12px; color:#000000;padding:0px;margin: 0;line-height: 19pt; text-align: left;"><font color="#1c1c1c" face="Arial, Helvetica" size="3">Working to demonstrate the capabilities of the Fyne toolkit whilst building their next project, Fyne Labs have decided to live-code building their new App Builder. You can watch the videos on <a alt="YouTube" href="https://www.youtube.com/playlist?list=PLw-dEUf31ZOrcauGkrLWSSrJTAfMo_gMf" rel="noopener noreferrer" style="text-decoration:underline;color: rgb(28, 28, 28);" target="_blank" title="YouTube" zcurl_name="l_11"><font color="#1c1c1c" style="color:#1c1c1c;">YouTube</font></a> or find out more at <a alt="https://fysion.app" href="https://fysion.app" rel="noopener noreferrer" style="text-decoration:underline;color: rgb(28, 28, 28);" target="_blank" title="https://fysion.app" zcurl_name="l_12"><font color="#1c1c1c" style="color:#1c1c1c;">fysion.app</font></a>. You can also sign up as an <a alt="early adopter" href="https://fynelabs.com/collaborative-app-builder/" rel="noopener noreferrer" style="text-decoration:underline;color: rgb(28, 28, 28);" target="_blank" title="early adopter" zcurl_name="l_13"><font color="#1c1c1c" style="color:#1c1c1c;">early adopter</font></a> and get access as soon as it's ready!</font></p></div>
+			</td></tr>
+		</tbody></table>
+       	  </div>
+		                    </div> 
+		    </td></tr></tbody></table>
+		    <!--[if (gte mso 9)|(IE)]>
+                      </td>
+            <![endif]-->
+		 <!--[if (gte mso 9)|(IE)]>
+                      </tr></tbody></table>
+            <![endif]-->
+		</td>
+	    </tr>
+	    </tbody></table>
+            </div></div>
+</td></tr>
+<tr><td class="txtsize" id="elm_1514380725790" style="border:0px;padding:0px 0px;border-collapse:collapse;" valign="top">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+	          <div class="zpelement-wrapper spacebar" id="elm_1514380725790" style=";word-wrap:break-word;overflow:hidden;background-color:transparent;">
+					
+					 <table bgcolor="transparent" border="0" cellpadding="0" cellspacing="0" class="zpAlignPos" style="padding:0px;border:0px;border-collapse:collapse; mso-table-lspace:0pt;font-size:5px; mso-table-rspace:0pt;word-break:break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;height:25px" width="100%">
+
+	                        <tbody><tr><td style="padding:0px;border:0px;font-size:5px;height:25px;border-top:none none none;border-bottom:none none none;">
+
+	                        &nbsp;&nbsp;&nbsp;
+
+	                        </td></tr>
+
+	                </tbody></table>
+
+	          </div>
+
+</td></tr>
+<tr><td class="txtsize" id="elm_1593176567610" style="border:0px;padding:0px 0px;border-collapse:collapse;" valign="top">
+
+          <div class="zpelement-wrapper" id="elm_1593176567610" style=";word-wrap:break-word;overflow:hidden;padding-right:0px;background-color:#ffffff;">
+	    	<table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="zpAlignPos" style="padding:0px;border:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;word-break:break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" width="100%">
+	  	
+            <tbody><tr><td class="paddingcomp" style="border:0px;padding:7px 15px;font-size:12pt;font-family:Arial,Helvetica;line-height:17pt;border-top:0px none ;   border-bottom:0px none ;padding-top:0px;padding-bottom:15px;padding-right:15px;padding-left:15px">
+             	    		<div componentbgcolor="#ffffff" componentlineheight="17pt" componentpaddingbottom="15px" componentpaddingleft="15px" componentpaddingright="15px" componentpaddingtop="0px" style="background-color: rgb(255, 255, 255);"><p align="center" style="line-height:1.7;font-family:Arial,verdana;font-size:12px; color:#000000;padding:0px;margin: 0;text-align: center; line-height: 17pt;"><span style="line-height: 17pt;"><font color="#848484" style="line-height: 17pt;">Want to change how you receive these emails?</font></span></p><p align="center" style="line-height:1.7;font-family:Arial,verdana;font-size:12px; color:#000000;padding:0px;margin: 0;text-align: center; line-height: 17pt;"><font color="#848484" style="line-height: 17pt;">you can <a alt="update your preferences" href="http://$[LI:UPDATEPROFILE]$" rel="noopener noreferrer" style="text-decoration:underline;text-decoration-line: underline;" target="_blank" title="update your preferences" zcurl_name="l_14"><font color="#848484" style="color: rgb(132, 132, 132); line-height: 17pt;">update your preferences</font></a> or <u><span style="line-height: 17pt;"><a alt="unsubscribe from this list." href="http://$[LI:UNSUBSCRIBE]$" rel="noopener noreferrer" style="text-decoration:underline;" target="_blank" title="unsubscribe from this list." zcurl_name="l_15"><font color="#848484" style="color: rgb(132, 132, 132); line-height: 17pt;">unsubscribe from this list.</font></a></span></u></font><br></p></div>
+			</td></tr>
+		</tbody></table>
+       	  </div>
+</td></tr>
+    </tbody></table>
+</div>
+
+					</td> 
+					</tr> 
+					</tbody></table>
+				</td> 
+				<td style="border:0px;padding:0px;border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">&nbsp;</td>
+			</tr> 
+		</tbody></table> 
+</div>
+</center> 
+</body></html>
